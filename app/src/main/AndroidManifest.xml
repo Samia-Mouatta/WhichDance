@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="mouatta.samia.whichdance">
+    package="my.wallpaper.WhichDance">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
@@ -9,8 +9,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".IntroActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name="my.wallpaper.WhichDance.IntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,15 +17,26 @@
             </intent-filter>
         </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
-        <activity android:name=".MainActivity"
+        <activity android:name="my.wallpaper.WhichDance.MainActivity"
             android:theme="@style/AppTheme"></activity>
-        <activity android:name=".BalletActivity"></activity>
-        <activity android:name=".SalsaActivity"></activity>
-        <activity android:name=".IceActivity"></activity>
-        <activity android:name=".ValseActivity"></activity>
-        <activity android:name=".ChachaActivity"></activity>
-        <activity android:name=".FlamencoActivity"></activity>
-        <activity android:name=".FullImageActivity"></activity>
+        <activity android:name="my.wallpaper.WhichDance.BalletActivity"
+            android:parentActivityName="my.wallpaper.WhichDance.MainActivity"></activity>
+        <activity android:name="my.wallpaper.WhichDance.SalsaActivity"
+            android:parentActivityName="my.wallpaper.WhichDance.MainActivity"></activity>
+        <activity android:name="my.wallpaper.WhichDance.IceActivity"
+            android:parentActivityName="my.wallpaper.WhichDance.MainActivity"></activity>
+        <activity android:name="my.wallpaper.WhichDance.ValseActivity"
+            android:parentActivityName="my.wallpaper.WhichDance.MainActivity"></activity>
+        <activity android:name="my.wallpaper.WhichDance.ChachaActivity"
+            android:parentActivityName="my.wallpaper.WhichDance.MainActivity"></activity>
+        <activity android:name="my.wallpaper.WhichDance.FlamencoActivity"
+            android:parentActivityName="my.wallpaper.WhichDance.MainActivity"></activity>
+        <activity android:name="my.wallpaper.WhichDance.HelpActivity"
+            android:parentActivityName="my.wallpaper.WhichDance.MainActivity"></activity>
+        <activity android:name="my.wallpaper.WhichDance.AboutActivity"
+            android:parentActivityName="my.wallpaper.WhichDance.MainActivity"></activity>
+<!--        <activity android:name=".FullImageActivity"
+            android:parentActivityName=".BalletActivity"></activity>-->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
