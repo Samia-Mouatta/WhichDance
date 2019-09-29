@@ -1,8 +1,11 @@
 package my.wallpaper.WhichDance;
 
+import android.Manifest;
 import android.content.Intent;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.test.mock.MockPackageManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,11 +20,30 @@ public class MainActivity extends AppCompatActivity {
             "Ballet", "Ice", "Salsa", "Chacha", "Valse", "Flamenco"
     };
     int[] idImg = {R.drawable.ballet, R.drawable.ice, R.drawable.salsa, R.drawable.chacha, R.drawable.valse, R.drawable.flamenco};
+    private static final int REQUEST_CODE_PERMISSION = 2;
+    String[] mPermission = {Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        try {
+            if (ActivityCompat.checkSelfPermission(this, mPermission[0])
+                    != MockPackageManager.PERMISSION_GRANTED ||
+                    ActivityCompat.checkSelfPermission(this, mPermission[1])
+                            != MockPackageManager.PERMISSION_GRANTED) {
+
+                ActivityCompat.requestPermissions(this,
+                        mPermission, REQUEST_CODE_PERMISSION);
+
+                // If any permission aboe not allowed by user, this condition will execute every tim, else your else part will work
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         CustomGrid adapter = new CustomGrid(MainActivity.this, list, idImg);
         grid = (GridView) findViewById(R.id.grid);
