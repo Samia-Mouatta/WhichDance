@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">WhichDance</string>
     <string name="title_activity_welcome">Which Dance ?</string>
-    <string name="next">NEXT</string>
-    <string name="skip">SKIP</string>
-    <string name="start">GOT IT</string>
+    <string name="next">SUIVANT</string>
+    <string name="skip">PASSER</string>
+    <string name="start">COMMENCER</string>
 
-    <string name="slide_1_title">Bienvenue sur WhichDance!</string>
-    <string name="slide_1_desc">Il y a Danse classique!</string>
+    <string name="slide_1_title">Bienvenue</string>
+    <string name="slide_1_desc">WhichDance application de photos de danse!</string>
 
     <string name="slide_2_title">Salsa</string>
     <string name="slide_2_desc">Une danse géniale!</string>
@@ -15,10 +15,10 @@
     <string name="slide_3_desc">Danse de couple!</string>
 
     <string name="slide_4_title">Flamenco</string>
-    <string name="slide_4_desc">Danse espagnol!</string>
+    <string name="slide_4_desc">Danse espagnole!</string>
 
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="action_settings">A Propos</string>
 
-    
+
 </resources>
