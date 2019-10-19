@@ -35,8 +35,7 @@
             android:parentActivityName="my.wallpaper.WhichDance.MainActivity"></activity>
         <activity android:name="my.wallpaper.WhichDance.AboutActivity"
             android:parentActivityName="my.wallpaper.WhichDance.MainActivity"></activity>
-<!--        <activity android:name=".FullImageActivity"
-            android:parentActivityName=".BalletActivity"></activity>-->
+        <activity android:name=".FullImageActivity"></activity>
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

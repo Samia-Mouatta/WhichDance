@@ -3,11 +3,12 @@
     android:id="@+id/ballet_grid_view"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:numColumns="auto_fit"
+    android:numColumns="2"
     android:columnWidth="90dp"
     android:horizontalSpacing="10dp"
     android:verticalSpacing="10dp"
     android:gravity="center"
+    android:paddingTop="5dp"
     android:stretchMode="columnWidth" >
 
 </GridView>
