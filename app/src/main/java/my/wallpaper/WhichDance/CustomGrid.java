@@ -1,4 +1,4 @@
-package my.app.WhichDance;
+package my.wallpaper.WhichDance;
 
 import android.content.Context;
 import android.view.LayoutInflater;

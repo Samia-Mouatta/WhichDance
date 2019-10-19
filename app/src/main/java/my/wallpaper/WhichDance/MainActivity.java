@@ -100,6 +100,10 @@ public class MainActivity extends AppCompatActivity {
                 //start help activity
                 startActivity(new Intent(this, HelpActivity.class));
                 return true;
+/*            case R.id.action_intro :
+                //start intro activity;
+                startActivity(new Intent(this, IntroActivity.class));
+                return true;*/
             default:
                 return super.onOptionsItemSelected(item);
 
